@@ -1,0 +1,42 @@
+Package: onboard
+Version: 1.4.1+2270-0ppa1~trusty
+Architecture: i386
+Maintainer: Francesco Fumanti <francesco.fumanti@gmail.com>
+Installed-Size: 5832
+Depends: python3 (>= 3.4~), python3 (<< 3.5), libc6 (>= 2.4), libcairo2 (>= 1.10.0), libcanberra0 (>= 0.2), libdconf1 (>= 0.14.0), libgcc1 (>= 1:4.1.1), libglib2.0-0 (>= 2.31.8), libgtk-3-0 (>= 3.9.10), libhunspell-1.3-0, libstdc++6 (>= 4.1.1), libudev1 (>= 183), libx11-6, libxi6 (>= 2:1.2.99.4), libxkbfile1, libxtst6, dconf-gsettings-backend | gsettings-backend, python3-cairo, python3-gi-cairo, python3-dbus, gir1.2-gtk-3.0, gir1.2-pango-1.0 (>= 1.29.3), gir1.2-glib-2.0, gir1.2-gdkpixbuf-2.0, librsvg2-common, iso-codes
+Recommends: gir1.2-appindicator3-0.1, gir1.2-atspi-2.0, onboard-data (>= 0.99.0~alpha1~tr1531), xdg-utils
+Suggests: mousetweaks (>= 3.3.90)
+Filename: ./onboard_1.4.1+2270-0ppa1_trusty_i386.deb
+Size: 918564
+MD5sum: 45a39ff898797e1c00561e429f367336
+SHA1: 81c720b3ece22395b67420ffa059fd890b98ee11
+SHA256: d4a5de536c05d11d19ebd03268b4e24013795685599e27df1efa4849d3c288b2
+Section: gnome
+Priority: optional
+Homepage: https://launchpad.net/onboard
+Description: Simple On-screen Keyboard
+ On-screen Keyboard with macros, easy layout creation and word suggestion.
+
+Package: onboard-data
+Source: onboard
+Version: 1.4.1+2270-0ppa1~trusty
+Architecture: all
+Maintainer: Francesco Fumanti <francesco.fumanti@gmail.com>
+Installed-Size: 20377
+Depends: onboard (>= 0.99.0~alpha1~tr1507)
+Breaks: onboard-prediction-data (<< 0.99.0~alpha1~tr1531)
+Replaces: onboard-prediction-data (<< 0.99.0~alpha1~tr1531)
+Filename: ./onboard-data_1.4.1+2270-0ppa1_trusty_all.deb
+Size: 4275382
+MD5sum: ba5811e0a99865bd31e2cde1be3ecf90
+SHA1: 0ee9cee548185ba01d21ae33c823707c5660fcc0
+SHA256: dd4eca304156fc9cba509235846ec81649008e7ec3beaf772bd7a64a504dfe10
+Section: gnome
+Priority: optional
+Homepage: https://launchpad.net/onboard
+Description: Language model files for the word suggestion feature of Onboard
+ This package installs default language model files for various languages.
+ The word suggestion feature of Onboard uses these files (and if available
+ also custom user language model files) to compute the word completion
+ suggestions and the word prediction suggestions.
+
